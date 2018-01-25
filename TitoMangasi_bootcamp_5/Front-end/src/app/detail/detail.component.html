@@ -1,0 +1,47 @@
+
+<div class="col-xs-10">
+
+    <ol class="breadcrumb">
+        <li>
+            <a routerLink="/">Home</a>
+        </li>
+        <li>
+            <a routerLink="/{{produk.kategori}}">{{produk.kategori}}</a>
+        </li>
+        <li class="active">{{produk.nama}}</li>
+    </ol>
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="col-xs-7">
+                <div class="thumbnail">
+                    <img style="height: 80%; width: 80%;" src="{{produk.picture}}" class="img-responsive" alt="">
+
+                    <div class="post-content">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-5">
+
+                <label>{{produk.name}}</label>
+                <br>
+                <label style="font-size : 30px; font-family : 'Times New Roman', Times, serif; margin-bottom : 45px;">Rp {{produk.price}}</label>
+                <br>
+                <label style="font-size : 26px; font-family : 'Times New Roman', Times, serif;">Color : {{produk.color}}</label>
+                <br>
+                <label style="font-size : 26px; font-family : 'Times New Roman', Times, serif; margin-bottom : 45px;">Size : {{produk.size}}</label>
+                <br>
+                    <a [routerLink]="['/cart', produk._id]">
+                        <p style="text-align: center; color: black; font-size: 18px; margin-top: 10px;">Add to Cart</p>
+                    </a>      
+  
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</div>
